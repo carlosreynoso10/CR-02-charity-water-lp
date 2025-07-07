@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Header -->
+  <header>
+    <!-- Charity: Water logo -->
+    <!-- Changed to local charity water.jpg image for simplicity and made it bigger for visibility -->
+    <img src="img/charity water.jpg" alt="charity water logo" style="height:60px;">
+    <!-- Social icons: aligned between logo and donate button using a simple wrapper for beginners -->
+    <div style="flex:1; display:flex; justify-content:center; align-items:center;">
+      <div class="social-icons">
+        <!-- Facebook icon now links to charity: water Facebook page -->
+        <a href="https://www.facebook.com/charitywater/" target="_blank">
+          <img src="img/FaceBook.jpg" alt="Facebook">
+        </a>
+        <!-- Instagram icon links to charity: water Instagram page -->
+        <a href="https://www.instagram.com/charitywater/?hl=en" target="_blank">
+          <img src="img/insta.jpg" alt="Insta">
+        </a>
+        <!-- TikTok icon links to charity: water TikTok page -->
+        <a href="https://www.tiktok.com/@charitywater?lang=en" target="_blank">
+          <img src="img/TikTok.jpg" alt="TikTok">
+        </a>
+        <!-- X icon links to charity: water X page -->
+        <a href="https://x.com/charitywater?lang=mr" target="_blank">
+          <img src="img/X.jpg" alt="X">
+        </a>
+      </div>
+    </div>
+    <button class="donate-button" onclick="window.open('https://www.charitywater.org/thebeginning?utm_source=adwords&utm_medium=grant-ppc&utm_campaign=spring-acq-usrow&utm_term=cBC_CW_G_GRANT_SEARCH_BRAND_ALL_US+ROW_MXC_ALL_BROAD_ALL&utm_content=branded&gad_source=1&gad_campaignid=16821193098&gbraid=0AAAAADNj5D9A7WYl7JsNDpsr0F6m3JTdS&gclid=Cj0KCQjwvajDBhCNARIsAEE29Wo30ydQbB-F5IBkVQtw3uRrx3pYUUWckKVrdyiVuHQFKah950g9fWsaAnj0EALw_wcB', '_blank')">Donate</button>
+  </header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Give Simply.<br>Impact Deeply.</h1>
+      <p>Mobile donations turn small gifts into clean water for those in need.</p>
+      <div class="progress-bar"></div>
+      <div class="labels">
+        <span>Amount Received</span>
+        <span>Goal Amount</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Made HERO.jpg bigger by increasing max-width and width -->
+      <img src="img/HERO.jpg" alt="Hero image" style="max-width:600px; width:100%; border-radius:10px;">
+    </div>
+  </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <!-- Lower Section -->
+  <section class="lower-section">
+    <button class="donate-btn" onclick="window.open('https://www.charitywater.org/thebeginning?utm_source=adwords&utm_medium=grant-ppc&utm_campaign=spring-acq-usrow&utm_term=cBC_CW_G_GRANT_SEARCH_BRAND_ALL_US+ROW_MXC_ALL_BROAD_ALL&utm_content=branded&gad_source=1&gad_campaignid=16821193098&gbraid=0AAAAADNj5D9A7WYl7JsNDpsr0F6m3JTdS&gclid=Cj0KCQjwvajDBhCNARIsAEE29Wo30ydQbB-F5IBkVQtw3uRrx3pYUUWckKVrdyiVuHQFKah950g9fWsaAnj0EALw_wcB', '_blank')">Donate</button>
+    <div class="video-section">
+      <!-- Changed image to P1.JPG as requested -->
+      <img src="img/P1.JPG" alt="Kids enjoying water">
+    </div>
+    <div class="cta-box">
+      <a href="https://www.charitywater.org/thebeginning?utm_source=adwords&utm_medium=grant-ppc&utm_campaign=spring-acq-usrow&utm_term=cBC_CW_G_GRANT_SEARCH_BRAND_ALL_US+ROW_MXC_ALL_BROAD_ALL&utm_content=branded&gad_source=1&gad_campaignid=16821193098&gbraid=0AAAAADNj5D9A7WYl7JsNDpsr0F6m3JTdS&gclid=Cj0KCQjwvajDBhCNARIsAEE29Wo30ydQbB-F5IBkVQtw3uRrx3pYUUWckKVrdyiVuHQFKah950g9fWsaAnj0EALw_wcB" target="_blank" style="color: inherit; text-decoration: none;">
+        Donate today and bring more smiles to families from all over the world!
+      </a>
+    </div>
+  </section>
+
 </body>
 </html>
